@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ariel - On Human Legs",
+    "ink_cost": 4,
+    "rarity": "Uncommon",
+    "id": "ariel-on-human-legs"
+  },
+  {
+    "name": "Ariel - Spectacular Singer",
+    "ink_cost": 3,
+    "rarity": "Super Rare",
+    "id": "ariel-spectacular-singer"
+  },
+  {
+    "name": "Maximus - Relentless Pursuer",
+    "ink_cost": 3,
+    "rarity": "Uncommon",
+    "id": "maximus-relentless-pursuer"
+  }
+]
