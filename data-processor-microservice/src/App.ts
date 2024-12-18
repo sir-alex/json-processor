@@ -8,18 +8,21 @@ import { S3Uploader } from './tcg/s3-uploader';
 import { MtgCardsType } from './types/cards/mtg-cards.types';
 import { LorcanaCardsType } from './types/cards/lorcana-cards.types';
 import { getValidationSchema } from './schemas/map.schema';
+import { BaseClass } from './common/base.class';
 
 import { CONFIG, ICONFIG } from './config';
 
 type CardTypesUnion = MtgCardsType | LorcanaCardsType;
 
-export class App {
+export class App extends BaseClass {
 
   protected config: ICONFIG;
   private db: Db | undefined;
   private collection: Collection | undefined;
 
   constructor(config: ICONFIG) {
+    super();
+    this.checkEnvParams([config.EXTERNAL_CARDS.length])
     this.config = config;
   }
 
