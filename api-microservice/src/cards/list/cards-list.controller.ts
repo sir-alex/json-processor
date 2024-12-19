@@ -5,6 +5,7 @@ import { CardsListParams } from './dto/cards-list.params.dto';
 import { DbService } from '../../core/db/db.service';
 import { QueryService } from '../../core/http/query.service';
 import { HeadersService } from '../../core/http/headers.service';
+import { ICardsListParams } from './types/cards.types';
 
 @Controller(ROUTES.CARDS.CONTROLLER)
 export class CardsListController {
@@ -29,9 +30,8 @@ export class CardsListController {
     dto: CardsListParams,
     res: Response,
   ) {
-
-    const { filters, page, limit } = this.queryService.getPaginatedQueryParams(dto);
-    const { data, meta } = await this.dbService.filterAndPaginate(filters, page, limit);
+    const { filters, page, limit, fields } = this.queryService.getPaginatedQueryParams(dto);
+    const { data, meta } = await this.dbService.filterAndPaginate<ICardsListParams>(filters, page, limit, fields);
     res = this.headersService.setPaginatedHeaders(res, meta);
 
     return res.status(HttpStatus.OK).json(data);

@@ -28,7 +28,8 @@ export class E2eHelper {
   }
 
   public sortByName(a: any, b: any) {
-    return a.name.localeCompare(b.name);
+    const sortingName = Object.keys(a)[0];
+    return a[sortingName].localeCompare(b.name);
   };
 
   public async initApp() {

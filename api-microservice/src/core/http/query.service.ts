@@ -10,9 +10,10 @@ export class QueryService {
   getPaginatedQueryParams<T extends object>(dto: PaginatedRequest<T>) {
     const defaultLimit = Number(this.configService.get<number>('DEFAULT_RESPONSE_LIMIT'));
     return {
+      filters: dto?.filters || {},
       page: dto?.page || 1,
       limit: dto?.limit || defaultLimit,
-      filters: dto?.filters || {},
+      fields: dto?.fields || [],
     };
   }
 

@@ -156,4 +156,32 @@ export const cardsSuccessE2eCase: TestCaseE2E<
       },
     ] as ICardsListResponse[],
   },
+  {
+    name: `POST provide fields key to limit the fields returned in the response`,
+    url: `/${ROUTES.CARDS.CONTROLLER}/${ROUTES.CARDS.LIST}`,
+    status: HttpStatus.OK,
+    method: 'POST',
+    params: {
+      fields: ["id","rarity"],
+      filters: {
+        rarity: {
+          in: ['rare', 'uncommon']
+        }
+      }
+    },
+    response: [
+      {
+        rarity: "rare",
+        id: "ach-hans-run-a2c5ee76"
+      },
+      {
+        rarity: "uncommon",
+        id: "brims-barone-midway-mobster-c64c31f2"
+      },
+      {
+        rarity: "uncommon",
+        id: "a-killer-among-us-79d577a8"
+      }
+    ] as ICardsListResponse[],
+  },
 ];

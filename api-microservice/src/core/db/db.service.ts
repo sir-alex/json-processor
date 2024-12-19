@@ -30,18 +30,20 @@ export class DbService {
   }
 
   async filterAndPaginate<T>(
-    filters: Filter<any>,
+    filters: Filter<T>,
     page: number,
-    limit: number
+    limit: number,
+    fields: string[],
   ): Promise<PaginationResult<T>> {
     this.validateFilters(filters);
     const skip = (page - 1) * limit;
 
     const query = this.buildQuery(filters);
+    const projection = this.buildProjection(fields);
 
     const [data, total] = await Promise.all([
       this.collection
-        .find(query, { projection: { _id: 0 } })
+        .find(query, { projection })
         .skip(skip)
         .limit(limit)
         .sort({ createdAt: -1 })
@@ -72,6 +74,13 @@ export class DbService {
         }
       }
     }
+  }
+
+  private buildProjection<T>(fields: (keyof T)[]): Record<string, 1 | 0> {
+    return fields.reduce((projection, field) => {
+      projection[field as string] = 1;
+      return projection;
+    }, { _id: 0 } as Record<string, 1 | 0>);
   }
 
   private buildQuery(filters: QueryFilters): Record<string, any> {
