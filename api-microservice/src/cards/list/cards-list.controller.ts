@@ -8,6 +8,7 @@ import { HeadersService } from '../../core/http/headers.service';
 import { ICardsListParams } from './types/cards.types';
 import { HttpExceptionFilter } from '../../core/http/http-exception-filter';
 import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { sanitizeObject } from '../../core/sanitizers/sanitizer.service';
 
 @ApiTags('cards')
 @Controller(ROUTES.CARDS.CONTROLLER)
@@ -32,7 +33,8 @@ export class CardsListController {
     @Body() dto: CardsListParams,
     @Res() res: Response,
   ) {
-    await this.handleRequest(dto, res);
+    const sanitizedDto = sanitizeObject(dto);
+    await this.handleRequest(sanitizedDto, res);
   }
 
   private async handleRequest(
