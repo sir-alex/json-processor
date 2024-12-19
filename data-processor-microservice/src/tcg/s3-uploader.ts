@@ -18,7 +18,7 @@ export class S3Uploader extends BaseClass {
     this.region = region;
     this.bucketName = bucketName;
     this.key = key;
-    this.s3Client = new S3Client({ region });
+    this.s3Client = new S3Client({ region, credentials: undefined });
   }
 
   public async process<T extends object>() {
