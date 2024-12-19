@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { BadRequestException, Inject, Injectable } from '@nestjs/common';
 import { Collection, Db, Filter } from 'mongodb';
 
 type FilterConditions = {
@@ -70,7 +70,7 @@ export class DbService {
           filter.hasOwnProperty('max') &&
           filter.min > filter.max
         ) {
-          throw new Error(`Invalid range for ${key}: min cannot be greater than max.`);
+          throw new BadRequestException(`Invalid range for ${key}: min cannot be greater than max.`);
         }
       }
     }
