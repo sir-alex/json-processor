@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { CardsListController } from './cards/list/cards-list.controller';
 import { CardsModule } from './cards/cards.module';
 import { DbService } from './core/db/db.service';
@@ -19,7 +17,7 @@ import { HeadersService } from './core/http/headers.service';
     CardsModule,
     CardsListModule
   ],
-  controllers: [AppController, CardsListController],
-  providers: [AppService, DbService, QueryService, HeadersService],
+  controllers: [CardsListController],
+  providers: [DbService, QueryService, HeadersService],
 })
 export class AppModule {}

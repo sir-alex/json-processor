@@ -7,7 +7,9 @@ import { QueryService } from '../../core/http/query.service';
 import { HeadersService } from '../../core/http/headers.service';
 import { ICardsListParams } from './types/cards.types';
 import { HttpExceptionFilter } from '../../core/http/http-exception-filter';
+import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags('cards')
 @Controller(ROUTES.CARDS.CONTROLLER)
 @UseFilters(HttpExceptionFilter)
 export class CardsListController {
@@ -21,6 +23,11 @@ export class CardsListController {
   }
 
   @Post(ROUTES.CARDS.LIST)
+  @ApiOperation({ summary: 'Get a paginated list of cards' })
+  @ApiResponse({ status: 200, description: 'The cards were retrieved successfully.' })
+  @ApiResponse({ status: 400, description: 'Invalid request parameters.' })
+  @ApiResponse({ status: 500, description: 'Internal server error.' })
+  @ApiBody({ type: CardsListParams })
   async getLeaderboardGetPost(
     @Body() dto: CardsListParams,
     @Res() res: Response,
