@@ -1,9 +1,7 @@
 .idea
 .git
 node_modules
-.env
-logs
-
+dist
 
 # compiled output
 /dist
