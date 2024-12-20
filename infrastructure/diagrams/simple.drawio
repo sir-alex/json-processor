@@ -109,6 +109,15 @@
         <mxCell id="3ExJg2iDRrv_fcJFM0sg-39" value="&lt;strong&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Simple Approach&lt;/font&gt;&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;This design involves a basic load balancer that redirects JSON data to be processed by microservices.&lt;/li&gt;&lt;li&gt;Within each microservice, data is received, processed as a stream, and stored in bulk batches.&lt;/li&gt;&lt;li&gt;The microservices and database instances (e.g., Atlas or self-hosted in AWS) can be scaled easily to handle relatively high loads.&lt;/li&gt;&lt;li&gt;I have already developed a JSON ingestion consumer for this approach. While straightforward, this solution lacks some of the advanced features that message brokers provide.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="660" width="1050" height="120" as="geometry" />
         </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-40" value="S3 &lt;br&gt;Data lake" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="585" y="240" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-41" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="204" as="sourcePoint" />
+            <mxPoint x="580" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
