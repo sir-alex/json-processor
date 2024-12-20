@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.3">
+  <diagram name="Page-1" id="jlB195uR0Wg73IOmR0U3">
+    <mxGraphModel dx="2728" dy="1590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-46" value="&lt;div&gt;Stream&lt;/div&gt;&lt;div&gt;Consumer&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="795" y="430" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-45" value="&lt;div&gt;Stream&lt;/div&gt;&lt;div&gt;Consumer&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="420" width="75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="906" y="310" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-10" value="MongoDB&lt;br&gt;read repl" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1029" y="339" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-1" value="AWS&lt;br&gt;&lt;div&gt;EventBridge&lt;/div&gt;&lt;div&gt;rule&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-8" value="MongoDB&lt;br&gt;write repl" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="936" y="330" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-9" value="MongoDB&lt;br&gt;read repl" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1016" y="330" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-14" value="&lt;div align=&quot;center&quot;&gt;ATLAS CLOUD&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="956" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.092;entryY=0.348;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="3ExJg2iDRrv_fcJFM0sg-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="775" y="430" as="sourcePoint" />
+            <mxPoint x="886" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.968;exitY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="986" y="376" as="sourcePoint" />
+            <mxPoint x="1016" y="376" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="450" as="sourcePoint" />
+            <mxPoint x="350" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="599.9999999999998" y="440" as="sourcePoint" />
+            <mxPoint x="709.0000000000002" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-23" value="&lt;div&gt;API&lt;/div&gt;&lt;div&gt;microservice&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1001" y="660" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-25" value="JSON" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="309" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="520" as="sourcePoint" />
+            <mxPoint x="390" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-27" value="Monitoring&lt;br&gt;CloudWatch " style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-31" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="846" y="670" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="891" y="700" as="sourcePoint" />
+            <mxPoint x="991" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-34" value="ElastiCache&lt;br&gt;optional" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="800" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-35" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1066" y="740" as="sourcePoint" />
+            <mxPoint x="1066" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-23" target="3ExJg2iDRrv_fcJFM0sg-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="906" y="690" as="sourcePoint" />
+            <mxPoint x="956" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-37" value="Monitoring&lt;br&gt;CloudWatch " style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1176" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-38" value="Prometheus and Grafana for metrics and dashboards.&lt;br&gt;&lt;br&gt;OpenTelemetry for distributed tracing" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="60" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-39" value="&lt;strong&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Advanced Approach&lt;/font&gt;&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;This design is tailored for processing hundreds of gigabytes of data efficiently, leveraging message brokers to handle delivery guarantee, history, cursors, topics, monitoring systems etc.&lt;/li&gt;&lt;li&gt;This design approach is for big data processing and storing it effectively in a database.&lt;br&gt;&lt;/li&gt;&lt;li&gt;The architecture is primarily based on Apache Pulsar, with producer and consumer clusters, complemented by additional advanced configurations&amp;nbsp; and optimizations.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="940" width="1050" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-40" value="S3 &lt;br&gt;Data lake" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="840" y="516" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-41" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="775" y="480" as="sourcePoint" />
+            <mxPoint x="835" y="556" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-42" value="JSON processor " style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-43" value="Stream&lt;br&gt;Producer" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-44" value="&lt;div&gt;Stream&lt;/div&gt;&lt;div&gt;Consumer&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="410" width="75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-42" target="3ExJg2iDRrv_fcJFM0sg-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="435" y="441" as="sourcePoint" />
+            <mxPoint x="505" y="441" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-48" value="OLAP&lt;br&gt;Data analytics" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="546" width="75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-48" target="3ExJg2iDRrv_fcJFM0sg-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="520" as="sourcePoint" />
+            <mxPoint x="980" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-51" value="OTEL&lt;br&gt;OpenTelemetry" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="310" width="96" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="3ExJg2iDRrv_fcJFM0sg-52" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3ExJg2iDRrv_fcJFM0sg-51" target="3ExJg2iDRrv_fcJFM0sg-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="360" as="sourcePoint" />
+            <mxPoint x="840" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
