@@ -123,6 +123,11 @@ export class App extends BaseClass {
     if (this.collection) {
       await this.collection.createIndex({ id: 1 }, { unique: true });
       await this.collection.createIndex({ name: 1 });
+      await this.collection.createIndex({ rarity: 1 });
+      await this.collection.createIndex({ color: 1 });
+      await this.collection.createIndex({ ink_cost: 1 });
+      await this.collection.createIndex({ name: 1, rarity: 1, ink_cost: 1 });
+      await this.collection.createIndex({ name: 1, rarity: 1, color: 1 });
       loggerService.info('Indexes created successfully');
     }
   }
