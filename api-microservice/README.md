@@ -24,6 +24,9 @@ The following environment variables are required to run the application:
 #### production mode
 `npm run start:prod`
 
+## Swagger Documentation
+`npm run start` and go to `http://localhost:3000/api` to see the swagger UI documentation and available endpoints
+
 ## Tests
 
 #### unit tests
